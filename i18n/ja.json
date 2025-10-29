@@ -1,0 +1,16 @@
+{
+  "title": "無制限の<br>アクセスを取得",
+  "unlimited_art": "無制限の<br>アート作成",
+  "exclusive_styles": "限定スタイル",
+  "magic_avatars": "マジックアバターが<br>20％オフ",
+  "yearly": "年間アクセス",
+  "best_offer": "最もお得",
+  "yearly_price": "年額わずか{{price}}ドル",
+  "weekly": "週間アクセス",
+  "weekly_price": "週額{{price}}ドル",
+  "weekly_price_single": "{{price}}/週<br>",
+  "terms": "利用規約",
+  "privacy": "プライバシーポリシー",
+  "restore": "復元",
+  "continue": "続行"
+}
