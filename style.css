@@ -1,14 +1,13 @@
 :root {
   --color-white: #ffffff;
-  --color-dark: #070b33;
-  --color-accent: #141131;
+  --color-dark: #0035ff;
+  --color-accent: #bc1fef;
   --shadow-dark: 0 0 48px rgba(4, 3, 26, 0.83);
   --shadow-light: 0 1px 6px rgba(0, 0, 0, 0.5);
   --opacity-secondary: 0.7;
   --opacity-tertiary: 0.3;
   --border-radius: 100px;
   --blur-intensity: blur(11px);
-  --gradient-primary: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
 }
 
 * {
@@ -252,14 +251,13 @@ body {
 .best-offer {
   box-sizing: border-box;
   position: absolute;
-  width: auto;
-  min-width: 119px;
+  width: 119px;
   height: 20px;
   right: 24px;
   bottom: 46px;
-  background: var(--gradient-primary);
-  box-shadow: var(--shadow-light);
+  padding: 2px;
   border-radius: 100px;
+  border: 2px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,16 +268,13 @@ body {
   text-transform: uppercase;
   color: var(--color-white);
   z-index: 2;
-  border: 1px solid transparent;
-  border-image-slice: 1;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  background-image: linear-gradient(
-    270deg,
-    #00b5ff 0%,
-    #632af7 53.01%,
-    #ff96f4 100%
-  );
+  box-shadow: var(--shadow-light);
+  /* Два слоя фона: верхний — внутренняя заливка (padding-box), нижний — градиент (border-box) */
+  background-image:
+    linear-gradient(var(--color-accent), var(--color-accent)),
+    linear-gradient(270deg, #00b5ff 0%, #632af7 53.01%, #ff96f4 100%);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
 }
 
 .best-offer::before {
@@ -289,11 +284,7 @@ body {
   top: 50%;
   width: 128px;
   height: 1px;
-  background: linear-gradient(
-    108.44deg,
-    rgba(253, 148, 244, 0) 25%,
-    #fd94f4 75.58%
-  );
+  background: linear-gradient(108.44deg, rgba(253, 148, 244, 0) 25%, #fd94f4 75.58%);
 }
 
 .best-offer::after {
@@ -312,7 +303,7 @@ body {
 .option.yearly.selected .best-offer {
   background: #ffffff;
   color: #141131;
-  border: 2px solid #ffffff;
+  border: 2px solid transparent;
 }
 
 .option.yearly.selected .best-offer::before,
