@@ -1,0 +1,14 @@
+node_modules
+dist
+build
+coverage
+*.min.js
+*.map
+assets/images
+assets/fonts
+.vscode
+.idea
+.git
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
