@@ -257,7 +257,7 @@ body {
   bottom: 46px;
   padding: 2px;
   border-radius: 100px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,7 +269,6 @@ body {
   color: var(--color-white);
   z-index: 2;
   box-shadow: var(--shadow-light);
-  /* Два слоя фона: верхний — внутренняя заливка (padding-box), нижний — градиент (border-box) */
   background-image:
     linear-gradient(var(--color-accent), var(--color-accent)),
     linear-gradient(270deg, #00b5ff 0%, #632af7 53.01%, #ff96f4 100%);
@@ -303,7 +302,7 @@ body {
 .option.yearly.selected .best-offer {
   background: #ffffff;
   color: #141131;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
 .option.yearly.selected .best-offer::before,
