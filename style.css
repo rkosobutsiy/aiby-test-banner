@@ -1,6 +1,7 @@
 :root {
   --color-white: #ffffff;
-  --color-dark: #0035ff;
+  --color-dark: #070b33;
+  --color-blue: #0035ff;
   --color-accent: #bc1fef;
   --shadow-dark: 0 0 48px rgba(4, 3, 26, 0.83);
   --shadow-light: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -270,7 +271,7 @@ body {
   z-index: 2;
   box-shadow: var(--shadow-light);
   background-image:
-    linear-gradient(var(--color-accent), var(--color-accent)),
+    linear-gradient(90deg, var(--color-accent), var(--color-blue)),
     linear-gradient(270deg, #00b5ff 0%, #632af7 53.01%, #ff96f4 100%);
   background-origin: padding-box, border-box;
   background-clip: padding-box, border-box;
