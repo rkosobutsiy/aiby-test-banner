@@ -1,10 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
+  function setVh() {
+    document.documentElement.style.setProperty("--vh", window.innerHeight + "px");
+  }
+  setVh();
+  window.addEventListener("resize", setVh);
+
+  document.body.classList.add("banner-open");
+
   const radioInputs = document.querySelectorAll('input[name="subscription"]');
   radioInputs.forEach((input) => {
     input.addEventListener("change", () => {
-      document
-        .querySelectorAll(".option")
-        .forEach((opt) => opt.classList.remove("selected"));
+      document.querySelectorAll(".option").forEach((opt) => opt.classList.remove("selected"));
       input.closest(".option").classList.add("selected");
     });
   });
@@ -23,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".banner__close")?.addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".banner").style.display = "none";
+    document.body.classList.remove("banner-open");
   });
 
   document.querySelectorAll(".banner__links a").forEach((link) => {

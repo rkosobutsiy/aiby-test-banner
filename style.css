@@ -373,6 +373,11 @@ body {
   border: 0;
 }
 
+body.banner-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
 @media (min-width: 375px) and (min-height: 812px) {
   .banner {
     background: url("./assets/images/bg.jpg") center top / cover no-repeat;
@@ -455,6 +460,7 @@ body {
 :lang(pt) .banner__content-title,
 :lang(es) .banner__content-title,
 :lang(de) .banner__content-title,
+:lang(ru) .banner__content-title,
 :lang(fr) .banner__content-title {
   font-size: 31px;
   line-height: 31px;
@@ -464,6 +470,7 @@ body {
 :lang(pt) .banner__content-cards-item-text,
 :lang(es) .banner__content-cards-item-text,
 :lang(de) .banner__content-cards-item-text,
+:lang(ru) .banner__content-cards-item-text,
 :lang(fr) .banner__content-cards-item-text {
   font-size: 10px;
   line-height: 1.3;
@@ -473,6 +480,7 @@ body {
 :lang(pt) .option-title,
 :lang(es) .option-title,
 :lang(de) .option-title,
+:lang(ru) .option-title,
 :lang(fr) .option-title {
   font-size: 12px;
 }
@@ -480,6 +488,7 @@ body {
 :lang(pt) .option-price,
 :lang(es) .option-price,
 :lang(fr) .option-price,
+:lang(ru) .option-price,
 :lang(de) .option-price {
   font-size: 12px;
 }
@@ -487,6 +496,7 @@ body {
 :lang(pt) .price-amount,
 :lang(de) .price-amount,
 :lang(fr) .price-amount,
+:lang(ru) .price-amount,
 :lang(es) .price-amount {
   font-size: 12px;
 }
@@ -494,6 +504,7 @@ body {
 :lang(pt) .best-offer,
 :lang(de) .best-offer,
 :lang(fr) .best-offer,
+:lang(ru) .best-offer,
 :lang(es) .best-offer {
   font-size: 10px;
 }
@@ -502,6 +513,7 @@ body {
 :lang(pt) .banner__links,
 :lang(de) .banner__links,
 :lang(fr) .banner__links,
+:lang(ru) .banner__links,
 :lang(es) .banner__links {
   gap: 18px;
 }
