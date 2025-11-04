@@ -208,13 +208,13 @@ body {
 }
 
 .banner__content-cards-item:nth-child(1) {
-  --card-image: url("./assets/images/bg-1.png");
+  --card-image: url("./assets/images/bg-1@3x.png");
 }
 .banner__content-cards-item:nth-child(2) {
-  --card-image: url("./assets/images/Bitmap.png");
+  --card-image: url("./assets/images/Bitmap@3x.png");
 }
 .banner__content-cards-item:nth-child(3) {
-  --card-image: url("./assets/images/Group.png");
+  --card-image: url("./assets/images/Group@3x.png");
 }
 
 .subscription-section {
@@ -451,7 +451,7 @@ body.banner-open {
     bottom: 16px;
   }
   :lang(ja) .banner__content {
-    inset: 266px 0 0;
+    inset: 300px 0 0;
   }
 }
 @media (max-width: 320px) {
@@ -516,14 +516,18 @@ body.banner-open {
   }
 }
 
-:lang(ja) .banner__content-title,
+
 :lang(pt) .banner__content-title,
 :lang(es) .banner__content-title,
 :lang(de) .banner__content-title,
 :lang(ru) .banner__content-title,
 :lang(fr) .banner__content-title {
-  font-size: 33px;
+  font-size: 34px;
   line-height: 33px;
+}
+:lang(ja) .banner__content-title {
+  font-size: 35px;
+  line-height: 46px;
 }
 
 :lang(ja) .banner__content-cards-item-text,
@@ -577,11 +581,6 @@ body.banner-open {
 }
 :lang(de) .banner__bottom {
   padding-inline: 24px;
-
-  :lang(ja) .banner__content {
-    inset: 146px 0 0;
-  }
-  box-sizing: border-box;
 }
 :lang(de) .banner__links {
   gap: 16px;
