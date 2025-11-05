@@ -481,6 +481,21 @@ body.banner-open {
   .banner__bottom {
     bottom: 8px;
   }
+  :lang(de) .banner__bottom {
+    padding-inline: 24px;
+  }
+  :lang(de) .banner__links {
+    gap: 9px;
+  }
+  :lang(de) .banner__links a {
+    font-size: 11px;
+  }
+  :lang(ru) .option-price {
+    font-size: 10px;
+  }
+  :lang(ru) .option-title {
+    font-size: 10px;
+  }
 }
 @media (max-height: 568px) {
   .banner__content {
@@ -516,11 +531,9 @@ body.banner-open {
   }
 }
 
-
 :lang(pt) .banner__content-title,
 :lang(es) .banner__content-title,
 :lang(de) .banner__content-title,
-:lang(ru) .banner__content-title,
 :lang(fr) .banner__content-title {
   font-size: 34px;
   line-height: 33px;
@@ -528,6 +541,10 @@ body.banner-open {
 :lang(ja) .banner__content-title {
   font-size: 35px;
   line-height: 46px;
+}
+:lang(ru) .banner__content-title {
+  font-size: 27px;
+  line-height: 27px;
 }
 
 :lang(ja) .banner__content-cards-item-text,
@@ -544,15 +561,13 @@ body.banner-open {
 :lang(pt) .option-title,
 :lang(es) .option-title,
 :lang(de) .option-title,
-:lang(ru) .option-title,
 :lang(fr) .option-title {
-  font-size: 12px;
+  font-size: 11px;
 }
 :lang(ja) .option-price,
 :lang(pt) .option-price,
 :lang(es) .option-price,
 :lang(fr) .option-price,
-:lang(ru) .option-price,
 :lang(de) .option-price {
   font-size: 12px;
 }
@@ -568,7 +583,6 @@ body.banner-open {
 :lang(pt) .best-offer,
 :lang(de) .best-offer,
 :lang(fr) .best-offer,
-:lang(ru) .best-offer,
 :lang(es) .best-offer {
   font-size: 10px;
 }
@@ -579,16 +593,31 @@ body.banner-open {
 :lang(es) .banner__links {
   gap: 40px;
 }
-:lang(de) .banner__bottom {
+
+:lang(de) .banner__bottom,
+:lang(ru) .banner__bottom,
+:lang(fr) .banner__bottom {
   padding-inline: 24px;
 }
 :lang(de) .banner__links {
-  gap: 16px;
+  gap: 13px;
 }
-:lang(ru) .banner__bottom {
-  padding-inline: 24px;
-  box-sizing: border-box;
+:lang(de) .banner__links a {
+  font-size: 12px;
 }
+
 :lang(ru) .banner__links {
-  gap: 16px;
+  gap: 13px;
+}
+:lang(ru) .banner__links a {
+  font-size: 12px;
+}
+:lang(ru) .best-offer {
+  font-size: 8px;
+}
+:lang(fr) .banner__links {
+  gap: 13px;
+}
+:lang(fr) .banner__links a {
+  font-size: 12px;
 }
